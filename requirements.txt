@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Werkzeug
+pymysql
+pyodbc
+azure-storage-blob
+gunicorn
+python-dotenv
