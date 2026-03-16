@@ -16,7 +16,7 @@ class Config(object):
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME')
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD')
 
-    encoded_password = quote_plus(SQL_PASSWORD)
+    encoded_password = quote_plus(SQL_PASSWORD or "")
 
     SQLALCHEMY_DATABASE_URI = (
         f"mssql+pyodbc://{SQL_USER_NAME}:{encoded_password}@{SQL_SERVER}:1433/"
